@@ -5,7 +5,6 @@
 #Declaring variable to grab the Kernel Version
 
 krv=$(uname -r)
-echo "$krv"
 
 # Getting Free Memory
 # For fist timers NR is awk built in variable, Here NR prints the 3rd line
