@@ -16,3 +16,21 @@ echo "$fmem"
 
 frdsk=$(df -h / | awk 'NR==2 {print $4}')
 echo "$frdsk"
+
+# Adding Color to a variable
+gr="\033[32m"
+bold="\033[1m"
+normal="\033[0m"
+
+#Printing Date
+printf -v logdate "%(%y-%m-%d)T"
+
+#Printing text using the color formating 
+echo -e $bold"Minimal System Report of" $gt "$HOSTNAME" $normal
+
+#Displaying Various info
+printf "\t Kernel version in $HOSTNAME is \t%s\n" $krv
+printf "\t Bash version in $HOSTNAME is \t%s\n" $BASH_VERSION
+printf "\t Free Storage in $HOSTNAME is \t%s\n" $frdsk
+printf "\t Free Memory in $HOSTNAME is \t%s\n" $fmem
+printf "\t No of files in PWD is \t%s\n" $(ls | wc -l)
