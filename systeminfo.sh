@@ -16,7 +16,7 @@ fmem=$(free -h | awk 'NR==2 {print $4}')
 frdsk=$(df -h / | awk 'NR==2 {print $4}')
 
 
-# Adding Color to a variable
+# Adding Color to a variable to
 gr="\033[32m"
 bold="\033[1m"
 normal="\033[0m"
