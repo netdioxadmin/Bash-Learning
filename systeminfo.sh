@@ -2,7 +2,7 @@
 
 # This is my first script in bash for collecting systeminfo in one go
 
-#Declaring variable to grab the Kernel Version
+# Declaring variable to grab the Kernel Version 
 
 krv=$(uname -r)
 
