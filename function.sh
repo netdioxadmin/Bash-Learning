@@ -49,7 +49,7 @@ var1="I am variable one"
 
 varfun(){
     var2="I am variable two"
-    local var3="I am variable3"
+    local var3="I am variable three"
 }
 varfun
 echo $var1
